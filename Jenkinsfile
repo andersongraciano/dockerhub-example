@@ -3,12 +3,12 @@ pipeline {
   agent any
   
   environment {
-    DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred-bernardo9999')
+    DOCKERHUB_CREDENTIALS = credentials('acesso-dockerhub')
   }
   stages {
     stage('Build') {
       steps {
-        sh 'docker build -t bernardo9999/dp-alpine:latest .'
+        sh 'docker build -t andersongraciano/dp-alpine:latest .'
       }
     }
     stage('Login') {
