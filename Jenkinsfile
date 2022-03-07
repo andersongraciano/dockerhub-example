@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Push') {
       steps {
-        sh 'docker push bernardo9999/dp-alpine:latest'
+        sh 'docker push andersongraciano/dp-alpine:latest'
       }
     }
   }
